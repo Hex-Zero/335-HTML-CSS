@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+header {
+  height: 20px;
+  background-color: rebeccapurple;
+}
+
+.max-main {
+  min-height: calc(100vh - 40px);
+}
+
+footer {
+  height: 20px;
+  background-color: rgb(35, 0, 70);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer > a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 5px;
+}
