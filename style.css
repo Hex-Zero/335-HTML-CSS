@@ -15,16 +15,56 @@ header {
   min-height: calc(100vh - 70px);
 }
 
+.max-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .max-main::after {
   content: "</>";
   position: absolute;
-
   top: 300px;
   left: 10px;
   font-weight: 700;
-  font-size: 400px;
-  transform: rotate(-9deg);
-  color: rgba(120, 0, 131, 0.082);
+  font-size: 500px;
+  transform: rotate(-7deg);
+  color: rgba(120, 0, 131, 0.055);
+}
+
+.max-deadpool-gif-container {
+  padding-top: 300px;
+  position: relative;
+  width: 700px;
+}
+
+.max-hero-headline > h1 {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 50px;
+  width: 700px;
+  padding: 70px;
+  padding-top: 200px;
+  padding-bottom: 0;
+}
+
+.max-hero-headline > h2 {
+  padding: 70px;
+  padding-top: 0;
+}
+
+.max-deadpool-gif-container > .max-cover {
+  position: absolute;
+  width: 700px;
+  height: 60px;
+  background-color: white;
+  z-index: 1;
+}
+
+.max-deadpool-gif-container > img {
+  position: absolute;
+  width: 700px;
 }
 
 footer {
