@@ -7,12 +7,24 @@
 }
 
 header {
-  height: 20px;
+  height: 50px;
   background-color: rebeccapurple;
 }
 
 .max-main {
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 70px);
+}
+
+.max-main::after {
+  content: "</>";
+  position: absolute;
+
+  top: 300px;
+  left: 10px;
+  font-weight: 700;
+  font-size: 400px;
+  transform: rotate(-9deg);
+  color: rgba(120, 0, 131, 0.082);
 }
 
 footer {
@@ -29,6 +41,20 @@ footer > a {
   text-decoration: none;
   font-size: 12px;
   margin-right: 5px;
+}
+
+header > a.max-logo > img {
+  position: absolute;
+  width: 42px;
+  margin: 5px 10px;
+}
+
+header > nav {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav > ul {
