@@ -30,3 +30,24 @@ footer > a {
   font-size: 12px;
   margin-right: 5px;
 }
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav > ul > li > a {
+  margin-right: 10px;
+  color: aliceblue;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav > ul > li.max-active > a {
+  color: rgb(255, 166, 139);
+}
+
+nav > ul > li > a:hover {
+  color: rgb(255, 235, 181);
+}
