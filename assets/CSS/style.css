@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-header {
-  height: 50px;
-  background-color: rebeccapurple;
-}
-
 .max-hero-button-container > a {
   background-color: aliceblue;
   text-decoration: none;
@@ -54,17 +41,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.max-main::after {
-  content: "</>";
-  position: absolute;
-  top: 300px;
-  left: 10px;
-  font-weight: 700;
-  font-size: 500px;
-  transform: rotate(-7deg);
-  color: rgba(120, 0, 131, 0.055);
 }
 
 .max-deadpool-gif-container {
@@ -115,41 +91,6 @@ footer > a {
   text-decoration: none;
   font-size: 12px;
   margin-right: 5px;
-}
-
-header > a.max-logo > img {
-  position: absolute;
-  width: 42px;
-  margin: 5px 10px;
-}
-
-header > nav {
-  height: 100%;
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav > ul {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-nav > ul > li > a {
-  margin-right: 10px;
-  color: aliceblue;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-nav > ul > li.max-active > a {
-  color: rgb(255, 166, 139);
-}
-
-nav > ul > li > a:hover {
-  color: rgb(255, 235, 181);
 }
 
 .max-main {
