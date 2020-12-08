@@ -17,7 +17,7 @@ header {
   border: none;
   border-radius: 35px;
   padding: 10px 30px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -33,7 +33,6 @@ header {
 }
 
 .max-hero-button-container > .max-contact-button:hover {
-  background-color: aliceblue;
   color: rgb(102, 51, 153);
   border: 3px solid rgb(102, 51, 153);
 }
@@ -47,9 +46,7 @@ header {
 
 .max-hero-button-container > .max-start-button:hover {
   background-color: rgb(44, 0, 88);
-  color: white;
   border: 3px solid rgb(44, 0, 88);
-  margin-left: 20px;
 }
 
 .max-hero {
@@ -71,7 +68,7 @@ header {
 }
 
 .max-deadpool-gif-container {
-  padding-top: 200px;
+  padding-top: 40px;
   position: relative;
   width: 700px;
 }
