@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Ginchiest";
+  src: url("/assets/fonts/Ginchiest.ttf");
+}
+
 .max-main {
   margin-top: 58px;
   min-height: calc(100vh - 20px - 58px);
@@ -76,7 +81,9 @@
   min-height: 300px;
 }
 
-nav.navbar {
+nav.navbar,
+nav.max-navbar {
+  display: none;
   width: 100%;
   position: absolute;
   z-index: 100;
@@ -89,6 +96,13 @@ nav.navbar {
     linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
 }
 
+nav.max-navbar {
+  display: flex;
+}
+
+nav.max-navbar > ul {
+  display: flex;
+}
 .max-nav-overlay {
   display: none;
   width: 100%;
@@ -109,6 +123,27 @@ nav.navbar .navbar-brand {
 
 nav.navbar .max-bb-logo {
   width: 42px;
+}
+
+nav.max-navbar .max-bb-logo {
+  margin: 0 16px;
+  width: 52px;
+}
+
+nav.max-navbar > a {
+  color: white;
+  font-size: 28px;
+  font-family: "Ginchiest";
+  text-shadow: 2px 2px rgb(209, 101, 0);
+}
+
+nav.max-navbar > ul > li {
+  list-style: none;
+}
+
+nav.max-navbar > ul > li > a {
+  color: white;
+  text-decoration: none;
 }
 
 nav.navbar ul {
@@ -181,4 +216,13 @@ footer > a:focus {
 footer > a:active {
   color: rgb(172, 0, 66);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav.navbar {
+    display: flex;
+  }
+  nav.max-navbar {
+    display: none;
+  }
 }
