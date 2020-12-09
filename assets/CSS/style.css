@@ -11,6 +11,19 @@ nav.navbar {
     linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
 }
 
+.max-nav-overlay {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.582);
+  position: fixed;
+  z-index: 99;
+}
+
+.max-nav-overlay.show {
+  display: block;
+}
+
 nav.navbar .navbar-brand {
   margin: 0;
   padding: 0;
@@ -20,17 +33,54 @@ nav.navbar .max-bb-logo {
   width: 42px;
 }
 
+nav.navbar ul {
+  margin-left: 42px;
+}
+
+nav.navbar ul > li.nav-item > a.nav-link {
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+nav.navbar ul > li.nav-item.max-nav-active > a.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -26px;
+  top: 16px;
+  transform: rotate(-45deg);
+  background-color: aliceblue;
+}
+
+nav.navbar ul > li.nav-item:hover > a.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -26px;
+  top: 16px;
+  transform: rotate(-45deg);
+  background-color: rgb(255, 255, 255);
+}
+
 .carousel.slide {
   margin: 58px 0;
 }
 
 footer {
   height: 20px;
-  background-color: rgba(169, 242, 255, 0.973);
   color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background: linear-gradient(
+      235.45deg,
+      rgba(255, 255, 255, 0.35) 24.99%,
+      rgba(255, 255, 255, 0) 68.03%
+    ),
+    linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
 }
 
 footer > a {
