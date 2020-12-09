@@ -1,11 +1,32 @@
 nav.navbar {
   width: 100%;
   position: absolute;
+  z-index: 100;
+  top: 0;
+  background: linear-gradient(
+      235.45deg,
+      rgba(255, 255, 255, 0.35) 24.99%,
+      rgba(255, 255, 255, 0) 68.03%
+    ),
+    linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
+}
+
+nav.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar .max-bb-logo {
+  width: 42px;
+}
+
+.carousel.slide {
+  margin: 58px 0;
 }
 
 footer {
   height: 20px;
-  background-color: rgb(35, 0, 70);
+  background-color: rgba(169, 242, 255, 0.973);
   color: aliceblue;
   display: flex;
   align-items: center;

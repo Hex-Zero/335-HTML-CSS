@@ -383,3 +383,16 @@ main {
 [hidden] {
   display: none !important;
 }
+
+.carousel-inner img {
+  margin-top: 40px;
+  width: 100%;
+  margin: auto;
+  min-height: 200px;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
