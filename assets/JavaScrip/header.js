@@ -8,3 +8,14 @@ function loadPage(href) {
 document.getElementById("max-header").innerHTML = loadPage(
   "../Components/header.html"
 );
+
+const activeLinkName =
+  ".max-" +
+  window.location.pathname
+    .replace(/^.*[\\\/]/, "")
+    .split(".")
+    .slice(0, -1)
+    .join(".") +
+  "-link";
+
+$(activeLinkName).addClass("max-nav-active");
