@@ -224,6 +224,12 @@ nav.navbar ul > li.nav-item:hover > a.nav-link::before {
   color: white;
 }
 
+.input-group-prepend.max-calculate-timesTable:hover
+  > .input-group-text.max-calculate-timesTable {
+  background-color: #ae00ff;
+  color: white;
+}
+
 footer {
   height: 20px;
   color: aliceblue;
