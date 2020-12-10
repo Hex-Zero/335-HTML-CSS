@@ -172,6 +172,10 @@ nav.navbar ul > li.nav-item > a.nav-link {
   position: relative;
 }
 
+nav.max-navbar ul > li.nav-item.max-nav-active > a.nav-link {
+  color: #fb00ff;
+}
+
 nav.navbar ul > li.nav-item.max-nav-active > a.nav-link::before {
   content: "";
   position: absolute;
@@ -195,7 +199,29 @@ nav.navbar ul > li.nav-item:hover > a.nav-link::before {
 }
 
 .carousel.slide {
-  margin: 58px 0;
+  margin: 58px 0 15px 0;
+}
+
+.container .max-card {
+  margin: 15px;
+}
+
+.input-group-prepend.max-calculate-circumference:hover
+  > .input-group-text.max-calculate-circumference {
+  background-color: #ff7917;
+  color: white;
+}
+
+.input-group-prepend.max-calculate-random:hover
+  > .input-group-text.max-calculate-random {
+  background-color: #ff1717;
+  color: white;
+}
+
+.input-group-prepend.max-calculate-squareRoot:hover
+  > .input-group-text.max-calculate-squareRoot {
+  background-color: #0011ff;
+  color: white;
 }
 
 footer {

@@ -21,7 +21,7 @@
     <title>Bird's Bonanza - Contact</title>
   </head>
   <body>
-    <div class="max-main max-contact-form">
+    <div class="max-main">
       <nav class="max-navbar">
         <a class="navbar-brand" href="/index.html"
           ><img
@@ -37,7 +37,7 @@
             <a class="nav-link" href="/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Pages/Tasks.html">Tasks</a>
+            <a class="nav-link" href="/Pages/Tasks.html">tasks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Map</a>
@@ -103,36 +103,64 @@
           </ul>
         </div>
       </nav>
-      <form name="contact" netlify>
-        <label
-          >Name<input
-            type="text"
-            name="name"
-            required
-            oninvalid="this.setCustomValidity('Please Enter Enter Your Full Name')"
-            placeholder="Enter Your Full Name"
-        /></label>
-
-        <label
-          >Email<input
-            type="email"
-            name="email"
-            required
-            oninvalid="this.setCustomValidity('Please Enter valid email')"
-            placeholder="Enter Your E-mail Address"
-        /></label>
-
-        <label
-          >Subject<textarea
-            name="subject"
-            required
-            oninvalid="this.setCustomValidity('Please Enter The Subject You Would Like To Discuss')"
-            placeholder="Enter The Subject You Would Like To Discuss"
-          ></textarea>
-        </label>
-
-        <button type="submit">Send</button>
-      </form>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend max-calculate-circumference">
+          <span
+            class="input-group-text max-calculate-circumference"
+            id="inputGroup-sizing-sm"
+            >Calculate</span
+          >
+        </div>
+        <input
+          type="number"
+          id="max-circumference-input"
+          class="form-control"
+          aria-label="Small"
+          aria-describedby="inputGroup-sizing-sm"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">Circumference</span>
+        </div>
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend max-calculate-random">
+          <span
+            class="input-group-text max-calculate-random"
+            id="inputGroup-sizing-sm"
+          >
+            Randomize</span
+          >
+        </div>
+        <input
+          type="number"
+          id="max-random-input"
+          class="form-control"
+          aria-label="Small"
+          aria-describedby="inputGroup-sizing-sm"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon1">Random</span>
+        </div>
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend max-calculate-squareRoot">
+          <span
+            class="input-group-text max-calculate-squareRoot"
+            id="inputGroup-sizing-sm"
+            >Square</span
+          >
+        </div>
+        <input
+          type="number"
+          id="max-squareRoot-input"
+          class="form-control"
+          aria-label="Small"
+          aria-describedby="inputGroup-sizing-sm"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon3">SquareRoot</span>
+        </div>
+      </div>
     </div>
     <footer>
       <a href="https://github.com/Hex-Zero" target="__blank"
