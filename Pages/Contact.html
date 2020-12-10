@@ -22,8 +22,23 @@
   </head>
   <body>
     <div id="max-header"></div>
+    <div id="max-success-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Success</h5>
+          </div>
+          <div class="modal-body">
+            <p>Form Successfully Sent - Thank you</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="max-main max-contact-form">
-      <form name="contact" netlify>
+      <form id="max-contact-form" name="contact" netlify>
         <label
           >Name<input
             type="text"
@@ -68,5 +83,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="/assets/JavaScript/navbar.js"></script>
   <script src="/assets/JavaScript/header.js"></script>
+  <script src="/assets/JavaScript/form.js"></script>
   <script src="/assets/JavaScript/script.js"></script>
 </html>
