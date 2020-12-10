@@ -3,6 +3,20 @@
   src: url("/assets/fonts/Ginchiest.ttf");
 }
 
+:root {
+  --max-background: linear-gradient(
+      235.45deg,
+      rgba(255, 255, 255, 0.35) 24.99%,
+      rgba(255, 255, 255, 0) 68.03%
+    ),
+    linear-gradient(270.85deg, #1a00bd 15.42%, #aaf5ff 115.59%);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .max-main {
   margin-top: 58px;
   min-height: calc(100vh - 20px - 58px);
@@ -13,12 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-      235.45deg,
-      rgba(255, 255, 255, 0.35) 24.99%,
-      rgba(255, 255, 255, 0) 68.03%
-    ),
-    linear-gradient(270.92deg, #ff781775 -59.57%, #feaaff7a 126.42%);
+  background: var(--max-background);
 }
 
 .max-main.max-contact-form > form {
@@ -46,7 +55,7 @@
 
 .max-main.max-contact-form > form > label > textarea::placeholder,
 .max-main.max-contact-form > form > label > input::placeholder {
-  color: #ff781760;
+  color: #1100ff60;
   font-style: italic;
   font-size: 12px;
 }
@@ -61,7 +70,7 @@
       rgba(80, 80, 80, 0.35) 24.99%,
       rgba(255, 255, 255, 0) 68.03%
     ),
-    linear-gradient(270.92deg, #ff7817 -59.57%, #feaaff 126.42%);
+    linear-gradient(270.92deg, #0004ff -59.57%, #fb00ff 126.42%);
   transition: all 0.4s ease;
   border-radius: 5px;
   align-self: center;
@@ -69,12 +78,7 @@
 }
 
 .max-main.max-contact-form > form > button:hover {
-  background: linear-gradient(
-      -235.45deg,
-      rgba(80, 80, 80, 0.35) 24.99%,
-      rgba(255, 255, 255, 0) 68.03%
-    ),
-    linear-gradient(270.92deg, #feaaff 126.42%, #ff7817 -59.57%);
+  background: var(--max-background);
 }
 
 .max-main.max-contact-form > form > label > textarea {
@@ -88,12 +92,7 @@ nav.max-navbar {
   position: absolute;
   z-index: 100;
   top: 0;
-  background: linear-gradient(
-      235.45deg,
-      rgba(255, 255, 255, 0.35) 24.99%,
-      rgba(255, 255, 255, 0) 68.03%
-    ),
-    linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
+  background: var(--max-background);
 }
 
 nav.max-navbar {
@@ -122,12 +121,18 @@ nav.navbar .navbar-brand {
 }
 
 nav.navbar .max-bb-logo {
-  width: 42px;
+  width: 47px;
+}
+
+nav.max-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav.max-navbar .max-bb-logo {
   margin: 0 16px;
-  width: 52px;
+  width: 47px;
 }
 
 nav.max-navbar > a {
@@ -135,6 +140,16 @@ nav.max-navbar > a {
   font-size: 28px;
   font-family: "Ginchiest";
   text-shadow: 2px 2px rgb(209, 101, 0);
+  display: flex;
+  align-items: center;
+}
+
+nav.max-navbar > a > span {
+  margin-top: 6px;
+}
+
+nav.max-navbar > ul {
+  margin: 0;
 }
 
 nav.max-navbar > ul > li {
@@ -143,6 +158,7 @@ nav.max-navbar > ul > li {
 
 nav.max-navbar > ul > li > a {
   color: white;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -162,7 +178,7 @@ nav.navbar ul > li.nav-item.max-nav-active > a.nav-link::before {
   width: 10px;
   height: 10px;
   left: -26px;
-  top: 16px;
+  top: 15px;
   transform: rotate(-45deg);
   background-color: aliceblue;
 }
@@ -188,12 +204,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-      235.45deg,
-      rgba(255, 255, 255, 0.35) 24.99%,
-      rgba(255, 255, 255, 0) 68.03%
-    ),
-    linear-gradient(270.92deg, #ff7917 -59.57%, #fdaaff 126.42%);
+  background: var(--max-background);
 }
 
 footer > a {
